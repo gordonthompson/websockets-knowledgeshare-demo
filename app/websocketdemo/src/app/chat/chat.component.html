@@ -1,0 +1,24 @@
+<div class="chat-container" #chatContainer> 
+  <div class="message" *ngFor="let message of messages">
+    <span *ngIf="message.body">
+      <p class="body">{{message.body}}</p>
+      <p class="sender"> <span> from: </span> {{message.sender}}</p>
+      <p class="recipient"> <span> to: </span> {{message.toEntireChat? "Chat": message.recipientId}}</p>
+    </span>
+    <span *ngIf="message.Response"> 
+      <p class="notification">{{message.Response}}</p>
+    </span>
+  </div>
+</div>
+
+<form class="form-inline" (ngSubmit)="sendMessage()" #f="ngForm">
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" class="form-control" name="message" id="message" ngModel placeholder="Please enter your message..." required>
+  </div>
+  <div class="form-group">
+    <label for="recipient">Recipient ID</label>
+    <input type="text" class="form-control" name="recipient" id="recipient" ngModel placeholder="Leave blank to send to the Chat.">
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Send message</button>
+</form>

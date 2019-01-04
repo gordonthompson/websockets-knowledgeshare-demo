@@ -1,0 +1,13 @@
+<div class="login-container">
+    <h3> You are not logged-in.</h3>
+    <p> Please fill in the below form to log in </p>
+    <br><br><br>
+
+    <form class="form-inline" (ngSubmit)="createConnection()" #f="ngForm">
+        <div class="form-group">
+            <label>User Name: </label>
+            <input class="form-control" name="id" id="id" ngModel placeholder="Please enter a username for the Chatroom" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!f.valid"> Connect </button>
+    </form>
+</div>

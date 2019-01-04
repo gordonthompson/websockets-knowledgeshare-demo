@@ -1,0 +1,15 @@
+.login-container {
+    text-align: center;
+    font-family: 'Open Sans'
+}
+label {
+    margin-right: 20px;
+}
+
+.form-group {
+    margin-right: 30px;
+}
+
+input {
+    min-width: 300px;
+}
