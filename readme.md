@@ -36,3 +36,11 @@ Now imagine we want to expose a REST API to this chatroom, so 3rd party consumer
 	"recipientId": "Yichi"
 }
 ```
+
+## Further Resources
+
+https://www.youtube.com/watch?v=vQjiN8Qgs3c
+
+https://www.youtube.com/watch?v=FmaBZcQzL-Y&t=67s
+
+https://www.youtube.com/watch?v=i5OVcTdt_OU
